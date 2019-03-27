@@ -1,0 +1,28 @@
+#
+# Static definition for z/OS Connect
+#
+services:
+    - serviceId: zosconnAS  # unique lowercase ID of the service
+      title: z/OS Connect EE
+      description: z/OS Connect EE Server
+      catalogUiTileId: zcon
+      instanceBaseUrls:  # list of base URLs for each instance
+        - http://<hostname>:<port>/  # scheme://hostname:port/contextPath
+      homePageRelativeUrl:  # Home page is at the same URL
+      routes:
+        - gatewayUrl: api  # [api/ui/ws]/v{majorVersion}
+          serviceRelativeUrl: /
+        - gatewayUrl: ui
+          serviceRelativeUrl: /
+      apiInfo:
+        - apiId: com.ibm.zosconnect
+          gatewayUrl: api
+          version: 1.1.0
+          documentationUrl: https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/welcome/WelcomePage.html
+          swaggerUrl: http://<hostname>:<port>/zosConnect/api-docs
+
+    
+catalogUiTiles:
+    zcon:
+        title: z/OS Connect EE Servers
+        description: z/OS Connect EE Administration APIs
