@@ -2,7 +2,7 @@
 # Static definition for z/OS Connect
 #
 services:
-    - serviceId: zosconnAS  # unique lowercase ID of the service
+    - serviceId: <server name>  # unique lowercase ID of the service
       title: z/OS Connect EE
       description: z/OS Connect EE Server
       catalogUiTileId: zcon
