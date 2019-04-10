@@ -8,6 +8,7 @@ Full details on how to configure the API Mediation layer are available on the [Z
 
 The [sample file](./zosconnect.yml) can be updated with the information about your specific z/OS Connect EE server.
 
+* The `serviceId` needs to be updated with the name of the server.
 * The `instanceBaseUrls` list needs to be updated with the servers hostname and port.
 * The `swaggerUrl` needs to be updated with the server hostname and port.
 
