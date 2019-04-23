@@ -11,9 +11,7 @@ services:
       homePageRelativeUrl:  # Home page is at the same URL
       routes:
         - gatewayUrl: api  # [api/ui/ws]/v{majorVersion}
-          serviceRelativeUrl: /
-        - gatewayUrl: ui
-          serviceRelativeUrl: /
+          serviceRelativeUrl: /zosConnect
       apiInfo:
         - apiId: com.ibm.zosconnect
           gatewayUrl: api
