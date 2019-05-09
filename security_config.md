@@ -14,6 +14,8 @@ In order for the API Mediation Layer to establish a secure connection the certif
    ```
 1. Import the API Mediation Layer certificate into the z/OS Connect EE truststore. The certificate is in the `<zowe_home>/api-mediation/keystore/localhost/localhost.keystore.cer` file.
 
+Further information on configuring secure connections into z/OS Connect EE can be found in the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/securing/config_tls_racf.html).
+
 ## User authentication
 
 z/OS Connect EE will attempt to map the certificate used by the API Mediation Layer to a user ID available to the server.
